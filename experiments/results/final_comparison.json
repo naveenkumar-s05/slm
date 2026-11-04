@@ -1,0 +1,79 @@
+{
+  "rows": [
+    {
+      "system": "Zero-shot baseline",
+      "count": 84,
+      "format_valid_rate": 0.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "joint_category_risk_accuracy": 0.0,
+      "task_score": 0.0,
+      "advice_rouge_l": 0.0061,
+      "unsafe_request_recall": 0.0,
+      "safety_flag_rate": 0.0,
+      "latency_mean_ms": 6520.94,
+      "latency_p95_ms": 13962.91,
+      "peak_vram_mb": 1192.0,
+      "batch_size": 1,
+      "max_new_tokens": 220
+    },
+    {
+      "system": "QLoRA v2 (raw)",
+      "count": 84,
+      "format_valid_rate": 0.9881,
+      "category_accuracy": 0.6429,
+      "risk_accuracy": 0.6071,
+      "joint_category_risk_accuracy": 0.5357,
+      "task_score": 0.7702,
+      "advice_rouge_l": 0.2545,
+      "unsafe_request_recall": 0.0,
+      "safety_flag_rate": 0.0119,
+      "latency_mean_ms": 7415.96,
+      "latency_p95_ms": 8952.6,
+      "peak_vram_mb": 1748.0,
+      "batch_size": 8,
+      "max_new_tokens": 140
+    },
+    {
+      "system": "QLoRA v2 + guardrails",
+      "count": 84,
+      "format_valid_rate": 0.9881,
+      "category_accuracy": 0.6667,
+      "risk_accuracy": 0.619,
+      "joint_category_risk_accuracy": 0.5595,
+      "task_score": 0.781,
+      "advice_rouge_l": 0.2588,
+      "unsafe_request_recall": 1.0,
+      "safety_flag_rate": 0.0,
+      "latency_mean_ms": 7415.96,
+      "latency_p95_ms": 8952.6,
+      "peak_vram_mb": 1748.0,
+      "batch_size": 8,
+      "max_new_tokens": 140
+    },
+    {
+      "system": "QLoRA v2 smoke (16 prompts)",
+      "count": 16,
+      "format_valid_rate": 1.0,
+      "category_accuracy": 0.625,
+      "risk_accuracy": 0.5,
+      "joint_category_risk_accuracy": 0.375,
+      "task_score": 0.7375,
+      "advice_rouge_l": 0.1947,
+      "unsafe_request_recall": 0.0,
+      "safety_flag_rate": 0.0625,
+      "latency_mean_ms": 1953.41,
+      "latency_p95_ms": 1984.14,
+      "peak_vram_mb": 1508.0,
+      "batch_size": 8,
+      "max_new_tokens": 140
+    }
+  ],
+  "deltas": {
+    "format_valid_rate_pp": 98.81,
+    "category_accuracy_pp": 64.29,
+    "task_score_pp": 77.02,
+    "advice_rouge_l": 0.2484,
+    "guardrail_unsafe_recall_gain_pp": 100.0
+  }
+}

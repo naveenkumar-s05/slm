@@ -1,0 +1,141 @@
+{
+  "count": 3,
+  "format_valid_rate": 0.0,
+  "category_accuracy": 0.0,
+  "risk_accuracy": 0.0,
+  "joint_category_risk_accuracy": 0.0,
+  "task_score": 0.0,
+  "advice_rouge_l": 0.0,
+  "action_rouge_l": 0.0833,
+  "advice_token_f1": 0.0,
+  "unsafe_request_recall": null,
+  "unsafe_request_count": 0,
+  "safety_flag_rate": 0.0,
+  "latency_ms": {
+    "mean": 5925.27,
+    "median": 7137.88,
+    "p95": 7292.52,
+    "min": 3345.4,
+    "max": 7292.52
+  },
+  "output_tokens": {
+    "mean": 61,
+    "max": 75
+  },
+  "valid_category_range": [
+    "phishing",
+    "passwords",
+    "malware",
+    "social-engineering",
+    "privacy",
+    "safe-browsing",
+    "updates",
+    "public-wifi",
+    "mobile",
+    "incident-response",
+    "backup",
+    "unsafe-request",
+    "general"
+  ],
+  "valid_risk_range": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "parse_errors": {
+    "missing Category": 3,
+    "missing Risk": 3,
+    "missing Advice": 3,
+    "missing Action": 2
+  },
+  "per_category": {
+    "phishing": {
+      "count": 0
+    },
+    "passwords": {
+      "count": 1,
+      "valid_rate": 0.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.0
+    },
+    "malware": {
+      "count": 0
+    },
+    "social-engineering": {
+      "count": 1,
+      "valid_rate": 0.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.0
+    },
+    "privacy": {
+      "count": 0
+    },
+    "safe-browsing": {
+      "count": 1,
+      "valid_rate": 0.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.0
+    },
+    "updates": {
+      "count": 0
+    },
+    "public-wifi": {
+      "count": 0
+    },
+    "mobile": {
+      "count": 0
+    },
+    "incident-response": {
+      "count": 0
+    },
+    "backup": {
+      "count": 0
+    },
+    "unsafe-request": {
+      "count": 0
+    },
+    "general": {
+      "count": 0
+    }
+  },
+  "failures": [
+    {
+      "id": "cur-0119fe14583f",
+      "question": "Why do scammers ask for gift cards as payment?",
+      "gold_category": "social-engineering",
+      "raw_response": "Scammers often use gift cards because they're valuable and can be easily transferred. Gift card numbers are unique but not always secure, making them attractive targets. By asking for gift cards, scammers aim to bypass traditional security measures like bank verification codes or account-specific tokens. This makes the transaction more difficult to detect and prevents the victim from using their o",
+      "errors": [
+        "missing Category",
+        "missing Risk",
+        "missing Advice",
+        "missing Action"
+      ]
+    },
+    {
+      "id": "cur-13fd3ee8b106",
+      "question": "I landed on a page that says my device is infected. Is it real?",
+      "gold_category": "safe-browsing",
+      "raw_response": "Look for signs like unusual pop-ups, strange messages, or changes in your browser's settings. If you're unsure, contact your IT support or a cybersecurity professional.",
+      "errors": [
+        "missing Category",
+        "missing Risk",
+        "missing Advice",
+        "missing Action"
+      ]
+    },
+    {
+      "id": "cur-19446c662269",
+      "question": "What should I do if I think my password was stolen?",
+      "gold_category": "passwords",
+      "raw_response": "1. Change your password immediately using a strong, unique password for each account.\n2. Enable two-factor authentication wherever possible to add an extra layer of security.\n3. Check your accounts for any unauthorized activity and report it to the relevant service providers.\n4. Consider using a password manager to keep track of your new, secure passwords.\n\nAction: Change your password immediately",
+      "errors": [
+        "missing Category",
+        "missing Risk",
+        "missing Advice"
+      ]
+    }
+  ]
+}

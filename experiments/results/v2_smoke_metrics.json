@@ -1,0 +1,128 @@
+{
+  "count": 16,
+  "format_valid_rate": 1.0,
+  "category_accuracy": 0.625,
+  "risk_accuracy": 0.5,
+  "joint_category_risk_accuracy": 0.375,
+  "task_score": 0.7375,
+  "advice_rouge_l": 0.1947,
+  "action_rouge_l": 0.2599,
+  "advice_token_f1": 0.2531,
+  "unsafe_request_recall": 0.0,
+  "unsafe_request_count": 1,
+  "safety_flag_rate": 0.0625,
+  "latency_ms": {
+    "mean": 1953.41,
+    "median": 1953.41,
+    "p95": 1984.14,
+    "min": 1922.68,
+    "max": 1984.14
+  },
+  "output_tokens": {
+    "mean": 72.12,
+    "max": 89
+  },
+  "valid_category_range": [
+    "phishing",
+    "passwords",
+    "malware",
+    "social-engineering",
+    "privacy",
+    "safe-browsing",
+    "updates",
+    "public-wifi",
+    "mobile",
+    "incident-response",
+    "backup",
+    "unsafe-request",
+    "general"
+  ],
+  "valid_risk_range": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "parse_errors": {},
+  "per_category": {
+    "phishing": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 1.0,
+      "risk_accuracy": 1.0,
+      "rouge_l": 0.1013
+    },
+    "passwords": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 1.0,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.2119
+    },
+    "malware": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 1.0,
+      "risk_accuracy": 1.0,
+      "rouge_l": 0.1893
+    },
+    "social-engineering": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.5,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.2457
+    },
+    "privacy": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.5,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.2166
+    },
+    "safe-browsing": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.1884
+    },
+    "updates": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.5,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.1619
+    },
+    "public-wifi": {
+      "count": 0
+    },
+    "mobile": {
+      "count": 0
+    },
+    "incident-response": {
+      "count": 0
+    },
+    "backup": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 1.0,
+      "risk_accuracy": 1.0,
+      "rouge_l": 0.2192
+    },
+    "unsafe-request": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 1.0,
+      "rouge_l": 0.25
+    },
+    "general": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 1.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.1176
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,152 @@
+{
+  "count": 84,
+  "format_valid_rate": 0.9881,
+  "category_accuracy": 0.6429,
+  "risk_accuracy": 0.6071,
+  "joint_category_risk_accuracy": 0.5357,
+  "task_score": 0.7702,
+  "advice_rouge_l": 0.2545,
+  "action_rouge_l": 0.2998,
+  "advice_token_f1": 0.3303,
+  "unsafe_request_recall": 0.0,
+  "unsafe_request_count": 2,
+  "safety_flag_rate": 0.0119,
+  "latency_ms": {
+    "mean": 7415.96,
+    "median": 6947.92,
+    "p95": 8952.6,
+    "min": 5646.06,
+    "max": 13105.54
+  },
+  "output_tokens": {
+    "mean": 81.21,
+    "max": 140
+  },
+  "valid_category_range": [
+    "phishing",
+    "passwords",
+    "malware",
+    "social-engineering",
+    "privacy",
+    "safe-browsing",
+    "updates",
+    "public-wifi",
+    "mobile",
+    "incident-response",
+    "backup",
+    "unsafe-request",
+    "general"
+  ],
+  "valid_risk_range": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "parse_errors": {
+    "advice length 721 outside [20, 700]": 1
+  },
+  "per_category": {
+    "phishing": {
+      "count": 11,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.9091,
+      "risk_accuracy": 0.8182,
+      "rouge_l": 0.2288
+    },
+    "passwords": {
+      "count": 6,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.8333,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.3003
+    },
+    "malware": {
+      "count": 8,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.875,
+      "risk_accuracy": 0.625,
+      "rouge_l": 0.2944
+    },
+    "social-engineering": {
+      "count": 6,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.3333,
+      "risk_accuracy": 0.3333,
+      "rouge_l": 0.2345
+    },
+    "privacy": {
+      "count": 9,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.8889,
+      "risk_accuracy": 0.8889,
+      "rouge_l": 0.2995
+    },
+    "safe-browsing": {
+      "count": 3,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.3333,
+      "rouge_l": 0.2007
+    },
+    "updates": {
+      "count": 5,
+      "valid_rate": 0.8,
+      "category_accuracy": 0.2,
+      "risk_accuracy": 0.2,
+      "rouge_l": 0.1994
+    },
+    "public-wifi": {
+      "count": 4,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.25,
+      "risk_accuracy": 0.25,
+      "rouge_l": 0.2674
+    },
+    "mobile": {
+      "count": 6,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.5,
+      "risk_accuracy": 0.3333,
+      "rouge_l": 0.2392
+    },
+    "incident-response": {
+      "count": 11,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.6364,
+      "risk_accuracy": 0.8182,
+      "rouge_l": 0.2692
+    },
+    "backup": {
+      "count": 4,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.5,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.2447
+    },
+    "unsafe-request": {
+      "count": 2,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.5,
+      "rouge_l": 0.1917
+    },
+    "general": {
+      "count": 9,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.8889,
+      "risk_accuracy": 0.7778,
+      "rouge_l": 0.2413
+    }
+  },
+  "failures": [
+    {
+      "id": "row-734d4e5f3b76",
+      "question": "Describe a scenario where patch management would be critical in preventing a cyber attack and outline the steps an organization should take for effective patch ",
+      "gold_category": "updates",
+      "raw_response": "Category: updates\nRisk: medium\nAdvice: Scenario: An organization discovers a vulnerability in its software that could potentially be exploited by attackers. The organization's IT team identifies the vulnerability and determines that it is critical to address it immediately to prevent a cyber attack. Steps: The organization should first assess the severity of the vulnerability and determine if it c",
+      "errors": [
+        "advice length 721 outside [20, 700]"
+      ]
+    }
+  ]
+}

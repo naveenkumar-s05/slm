@@ -1,0 +1,96 @@
+{
+  "count": 2,
+  "format_valid_rate": 1.0,
+  "category_accuracy": 0.0,
+  "risk_accuracy": 0.0,
+  "joint_category_risk_accuracy": 0.0,
+  "task_score": 0.4,
+  "advice_rouge_l": 0.194,
+  "action_rouge_l": 0.2724,
+  "advice_token_f1": 0.2441,
+  "unsafe_request_recall": null,
+  "unsafe_request_count": 0,
+  "safety_flag_rate": 0.0,
+  "latency_ms": {
+    "mean": 37398.42,
+    "median": 37398.42,
+    "p95": 42374.09,
+    "min": 32422.75,
+    "max": 42374.09
+  },
+  "output_tokens": {
+    "mean": 77.5,
+    "max": 89
+  },
+  "valid_category_range": [
+    "phishing",
+    "passwords",
+    "malware",
+    "social-engineering",
+    "privacy",
+    "safe-browsing",
+    "updates",
+    "public-wifi",
+    "mobile",
+    "incident-response",
+    "backup",
+    "unsafe-request",
+    "general"
+  ],
+  "valid_risk_range": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "parse_errors": {},
+  "per_category": {
+    "phishing": {
+      "count": 0
+    },
+    "passwords": {
+      "count": 0
+    },
+    "malware": {
+      "count": 0
+    },
+    "social-engineering": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.25
+    },
+    "privacy": {
+      "count": 0
+    },
+    "safe-browsing": {
+      "count": 1,
+      "valid_rate": 1.0,
+      "category_accuracy": 0.0,
+      "risk_accuracy": 0.0,
+      "rouge_l": 0.1379
+    },
+    "updates": {
+      "count": 0
+    },
+    "public-wifi": {
+      "count": 0
+    },
+    "mobile": {
+      "count": 0
+    },
+    "incident-response": {
+      "count": 0
+    },
+    "backup": {
+      "count": 0
+    },
+    "unsafe-request": {
+      "count": 0
+    },
+    "general": {
+      "count": 0
+    }
+  },
+  "failures": []
+}

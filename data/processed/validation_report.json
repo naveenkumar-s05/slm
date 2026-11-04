@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "counts": {
+    "train": 669,
+    "val": 77,
+    "test": 84
+  },
+  "categories": {
+    "train": {
+      "phishing": 65,
+      "passwords": 35,
+      "malware": 43,
+      "social-engineering": 19,
+      "privacy": 123,
+      "safe-browsing": 17,
+      "updates": 21,
+      "public-wifi": 18,
+      "mobile": 31,
+      "incident-response": 133,
+      "backup": 16,
+      "unsafe-request": 3,
+      "general": 145
+    },
+    "val": {
+      "phishing": 9,
+      "passwords": 5,
+      "malware": 7,
+      "social-engineering": 4,
+      "privacy": 11,
+      "safe-browsing": 3,
+      "updates": 4,
+      "public-wifi": 3,
+      "mobile": 5,
+      "incident-response": 11,
+      "backup": 3,
+      "unsafe-request": 1,
+      "general": 11
+    },
+    "test": {
+      "phishing": 11,
+      "passwords": 6,
+      "malware": 8,
+      "social-engineering": 6,
+      "privacy": 9,
+      "safe-browsing": 3,
+      "updates": 5,
+      "public-wifi": 4,
+      "mobile": 6,
+      "incident-response": 11,
+      "backup": 4,
+      "unsafe-request": 2,
+      "general": 9
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

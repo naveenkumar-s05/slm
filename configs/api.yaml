@@ -1,0 +1,10 @@
+﻿adapter_path: models/cyberaware-qlora-v2
+model_config: configs/model.yaml
+host: 127.0.0.1
+port: 8000
+min_input_chars: 3
+max_input_chars: 500
+max_new_tokens: 140
+request_timeout_s: 60
+log_path: experiments/logs/api_requests.jsonl
+metrics_path: experiments/results/api_metrics.json

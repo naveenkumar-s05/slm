@@ -1,0 +1,19 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+fallback_model: Qwen/Qwen2.5-0.5B-Instruct
+revision: main
+license: apache-2.0
+model_card: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+parameters: 1.54B
+context_length: 32768
+dtype: bfloat16
+device_map: auto
+trust_remote_code: false
+
+quantization:
+  load_in_4bit: true
+  quant_type: nf4
+  use_double_quant: true
+  compute_dtype: bfloat16
+
+adapter_path: models/cyberaware-qlora-v2
+merged_path: models/cyberaware-merged

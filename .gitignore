@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local secrets / environment
+.env
+.env.*
+
+# Large model artifacts (keep final adapter in models/cyberaware-qlora-v2/)
+models/cyberaware-qlora/
+models/**/checkpoint-*/
+models/**/*.bin
+models/**/*.pt
+
+# Runtime logs (keep training history and result JSON/JSONL evidence)
+experiments/logs/*.log
+experiments/logs/api_requests.jsonl
+experiments/logs/*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

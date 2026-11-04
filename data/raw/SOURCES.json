@@ -1,0 +1,35 @@
+[
+  {
+    "name": "mariiazhiv/cybersecurity_qa",
+    "license": "Apache-2.0",
+    "url": "https://huggingface.co/datasets/mariiazhiv/cybersecurity_qa/resolve/main/cybersecurity_qa.jsonl",
+    "filename": "mariiazhiv_cybersecurity_qa.jsonl",
+    "usage": "General cybersecurity instruction/response pairs; cleaned and mapped to the CyberAware schema.",
+    "path": "data/raw/mariiazhiv_cybersecurity_qa.jsonl",
+    "sha256": "8c3254dc988612e50420746055dd1f946b30a31807bf41a789d2c29c18da412f",
+    "bytes": 267376,
+    "retrieved_utc": "2026-11-03T17:23:29+00:00"
+  },
+  {
+    "name": "Rowden/CybersecurityQAA",
+    "license": "MIT",
+    "url": "https://huggingface.co/datasets/Rowden/CybersecurityQAA/resolve/main/cybersecurityQAAdataset.json",
+    "filename": "rowden_cybersecurity_qaa.json",
+    "usage": "Policy and advice question/answer pairs; answers condensed to awareness guidance.",
+    "path": "data/raw/rowden_cybersecurity_qaa.json",
+    "sha256": "794658f30ca91e97cffab156b98ad25e1719ffc33cf89167452c7500116ae2ed",
+    "bytes": 2399267,
+    "retrieved_utc": "2026-11-03T17:23:30+00:00"
+  },
+  {
+    "name": "Ngadou/social-engineering-convo",
+    "license": "Apache-2.0",
+    "url": "https://huggingface.co/datasets/Ngadou/social-engineering-convo/resolve/main/text.csv",
+    "filename": "ngadou_social_engineering_convo.csv",
+    "usage": "Scam / not-scam conversations converted into 'is this a scam?' awareness examples.",
+    "path": "data/raw/ngadou_social_engineering_convo.csv",
+    "sha256": "fcecf95eab7b274d726f420df980f256b04d8f1d07604e723b65f0312b290a3f",
+    "bytes": 2867,
+    "retrieved_utc": "2026-11-03T17:23:31+00:00"
+  }
+]

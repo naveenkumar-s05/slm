@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-11-03T17:25:05+00:00",
+  "seed": 42,
+  "dedupe_threshold": 0.85,
+  "cross_split_threshold": 0.8,
+  "counts": {
+    "curated": {
+      "raw": 82,
+      "accepted": 82
+    },
+    "mariiazhiv/cybersecurity_qa": {
+      "raw": 502,
+      "off_topic": 354,
+      "accepted": 144,
+      "offensive": 4
+    },
+    "Rowden/CybersecurityQAA": {
+      "raw": 1563,
+      "off_topic": 947,
+      "accepted": 612,
+      "too_short_or_unusable": 1,
+      "missing_field": 1,
+      "offensive": 2
+    },
+    "Ngadou/social-engineering-convo": {
+      "raw": 10,
+      "accepted": 10
+    },
+    "dedupe": {
+      "duplicates_removed": 15
+    },
+    "cross_split": {
+      "test_records_removed": 3
+    }
+  },
+  "totals": {
+    "records": 830,
+    "by_split": {
+      "test": 84,
+      "train": 669,
+      "val": 77
+    },
+    "by_source_split": {
+      "Ngadou/social-engineering-convo|test": 2,
+      "Ngadou/social-engineering-convo|train": 7,
+      "Ngadou/social-engineering-convo|val": 1,
+      "Rowden/CybersecurityQAA|test": 46,
+      "Rowden/CybersecurityQAA|train": 513,
+      "Rowden/CybersecurityQAA|val": 51,
+      "curated|test": 29,
+      "curated|train": 40,
+      "curated|val": 13,
+      "mariiazhiv/cybersecurity_qa|test": 7,
+      "mariiazhiv/cybersecurity_qa|train": 109,
+      "mariiazhiv/cybersecurity_qa|val": 12
+    },
+    "by_category_split": {
+      "backup|test": 4,
+      "backup|train": 16,
+      "backup|val": 3,
+      "general|test": 9,
+      "general|train": 145,
+      "general|val": 11,
+      "incident-response|test": 11,
+      "incident-response|train": 133,
+      "incident-response|val": 11,
+      "malware|test": 8,
+      "malware|train": 43,
+      "malware|val": 7,
+      "mobile|test": 6,
+      "mobile|train": 31,
+      "mobile|val": 5,
+      "passwords|test": 6,
+      "passwords|train": 35,
+      "passwords|val": 5,
+      "phishing|test": 11,
+      "phishing|train": 65,
+      "phishing|val": 9,
+      "privacy|test": 9,
+      "privacy|train": 123,
+      "privacy|val": 11,
+      "public-wifi|test": 4,
+      "public-wifi|train": 18,
+      "public-wifi|val": 3,
+      "safe-browsing|test": 3,
+      "safe-browsing|train": 17,
+      "safe-browsing|val": 3,
+      "social-engineering|test": 6,
+      "social-engineering|train": 19,
+      "social-engineering|val": 4,
+      "unsafe-request|test": 2,
+      "unsafe-request|train": 3,
+      "unsafe-request|val": 1,
+      "updates|test": 5,
+      "updates|train": 21,
+      "updates|val": 4
+    },
+    "advice_chars": {
+      "min": 64,
+      "max": 598,
+      "mean": 306.4
+    }
+  },
+  "sources": [
+    {
+      "name": "curated",
+      "license": "project-authored",
+      "usage": "Hand-authored examples for schema, safety and topic coverage."
+    },
+    {
+      "name": "mariiazhiv/cybersecurity_qa",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "Rowden/CybersecurityQAA",
+      "license": "MIT"
+    },
+    {
+      "name": "Ngadou/social-engineering-convo",
+      "license": "Apache-2.0"
+    }
+  ]
+}

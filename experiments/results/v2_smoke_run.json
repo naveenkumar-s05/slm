@@ -1,0 +1,64 @@
+{
+  "tag": "v2_smoke",
+  "created_utc": "2026-11-03T19:05:30+00:00",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_license": "apache-2.0",
+  "adapter": "models/cyberaware-qlora-v2",
+  "quantized": true,
+  "batch_size": 8,
+  "test_path": "data/splits/test.jsonl",
+  "count": 16,
+  "generation": {
+    "max_new_tokens": 140,
+    "min_new_tokens": 10,
+    "do_sample": false,
+    "num_beams": 1,
+    "repetition_penalty": 1.05,
+    "use_cache": true,
+    "pad_token_id": null
+  },
+  "seed": 42,
+  "wall_time_s": 31.27,
+  "throughput_requests_per_s": 0.512,
+  "model_loaded_memory": {
+    "allocated_mb": 1169.4,
+    "reserved_mb": 1262.0,
+    "peak_allocated_mb": 1239.8,
+    "peak_reserved_mb": 1262.0
+  },
+  "inference_resources": {
+    "peak_process_rss_mb": 1282.1,
+    "inference_allocated_mb": 1177.5,
+    "inference_reserved_mb": 1508.0,
+    "inference_peak_allocated_mb": 1412.3,
+    "inference_peak_reserved_mb": 1508.0
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true,
+    "cpu_count": 12,
+    "ram_total_gb": 15.73,
+    "gpu": "NVIDIA GeForce RTX 2050",
+    "gpu_vram_gb": 4.0,
+    "gpu_compute_capability": "8.6",
+    "cuda_version": "12.1"
+  },
+  "metrics_summary": {
+    "format_valid_rate": 1.0,
+    "category_accuracy": 0.625,
+    "risk_accuracy": 0.5,
+    "joint_category_risk_accuracy": 0.375,
+    "task_score": 0.7375,
+    "advice_rouge_l": 0.1947,
+    "unsafe_request_recall": 0.0,
+    "latency_ms": {
+      "mean": 1953.41,
+      "median": 1953.41,
+      "p95": 1984.14,
+      "min": 1922.68,
+      "max": 1984.14
+    }
+  }
+}
